@@ -14,7 +14,7 @@ function About() {
       <a href="/home" className="back-to-home">Home</a> 
       
       <div className="container5">
-        <div className="row">
+        <div id="ab" className="row">
           <div className="col-md-12 text-center">
             <h2 className="section-title">About Param-Sanskrit</h2>
             <p className="section-subtitle">{message}</p>

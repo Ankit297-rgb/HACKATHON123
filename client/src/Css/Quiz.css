@@ -1,7 +1,7 @@
 .container3 {
-    width: 640px;
+    width: 100wh;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     background: linear-gradient(135deg, #fdfcf3, #f5e1da);
     color: #3e2723;
     display: flex;

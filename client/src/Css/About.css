@@ -9,6 +9,7 @@
     color: #060109;
     margin-bottom: 30px;
     font-weight: 700;
+    
   }
   
   .section-subtitle {
@@ -120,4 +121,6 @@ body {
   .back-to-home:hover {
     background-color: #0056b3;
   }
-  
+#ab {
+  background-color: transparent;
+}

@@ -15,7 +15,7 @@ const Explore = () => {
     <div className="container1 pt-5">
       <Navbar user={user} onLogout={onLogout} />
       <h1 className="display-5">Explore</h1>
-      <div className="row mb-4">
+      <div className="row1 mb-4">
         <div className="col-md-6">
           <div className="card text-center p-4">
             <img
@@ -47,7 +47,7 @@ const Explore = () => {
         <div className="col-md-6">
           <div className="card text-center p-4">
             <img
-              src="https://i.pinimg.com/originals/6a/9f/d2/6a9fd28d73b06bf9f122dfea7a97fa5f.jpg" // Replace with your image URL
+              src="https://w0.peakpx.com/wallpaper/434/584/HD-wallpaper-durga-puja-feltival-durgapuja-kolkata-bengali.jpg" // Replace with your image URL
               alt="Festivals"
               className="card-img-top"
             />
@@ -62,7 +62,7 @@ const Explore = () => {
         <div className="col-md-6">
           <div className="card text-center p-4">
             <img
-              src="https://i.pinimg.com/originals/6a/9f/d2/6a9fd28d73b06bf9f122dfea7a97fa5f.jpg" // Replace with your image URL
+              src="https://thumbs.dreamstime.com/b/india-background-showing-its-incredible-culture-diversity-monument-dance-festival-illustration-106768107.jpg" // Replace with your image URL
               alt="Quiz"
               className="card-img-top"
             />
