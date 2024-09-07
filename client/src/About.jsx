@@ -2,7 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import im3 from './image/im3.jpg';
+import pf1 from './image/pf1.jpg';
 import pf3 from './image/pf3.jpg';
+
 import './Css/About.css';
 
 function About() {
@@ -24,7 +26,7 @@ function About() {
           {/* Team Member Profiles */}
           <div className="col-sm-6 col-md-4">
             <div className="team-item">
-              <img src={im3} className="team-img" alt="Angshuman Kundu" />
+              <img src={pf1} className="team-img" alt="Angshuman Kundu" />
               <h3>ANGSHUMAN KUNDU</h3>
               <div className="team-info">
                 <p>MEMBER 1</p>
