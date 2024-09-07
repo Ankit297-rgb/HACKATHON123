@@ -631,3 +631,48 @@ footer .col-install .pay{
     font-weight: lighter;
     color: #6c6c6c;
 }
+@media (max-width: 768px) {
+    #product1 .pro-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+h1, h2, h4, h6, p, button {
+    font-family: 'Roboto', sans-serif;
+}
+.star {
+    color: gold;
+}
+.cart-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .cart-button:hover {
+    background-color: #26f9f2;
+  }
+  
+  .cart-button svg {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .pro {
+    position: relative;
+  }
+#banner {
+    background-image: url('C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\b2.jpg');
+}

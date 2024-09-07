@@ -1,19 +1,48 @@
+// ProductPage.js
 import React from 'react';
 import Navbar from './Navbar';
 import './Css/ProductPage.css';
+import d1 from './image/dress11.jpeg';
+import d2 from './image/dress22.jpg';
+import d3 from './image/dress33.webp';
+import d4 from './image/dress4.webp';
+import d5 from './image/dress5.jpeg';
+import d6 from './image/dress6.jpg';
+import pr1 from './image/pd11.jpg';
+import pr2 from './image/pd223.jpg';
+import pr3 from './image/pd3.jpg';
+import pr4 from './image/pd44.jpg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 function ProductPage({ user, onLogout }) {
-    const handleAddToCart = () => {
-        
-        alert('Added to cart!');
+    const handleAddToCart = (productTitle) => {
+        alert(`${productTitle} has been added to cart!`);
     };
+
+    const products = [
+        { id: 1, img: d1, title: "Hand Made T-Shirts", price: 499 },
+        { id: 2, img: d2, title: "Hand Made T-Shirts", price: 499 },
+        { id: 3, img: d3, title: "Hand Made T-Shirts", price: 699 },
+        { id: 4, img: d4, title: "Hand Made T-Shirts", price: 999 },
+        { id: 5, img: d5, title: "Hand Made T-Shirts", price: 599 },
+        { id: 6, img: d6, title: "Hand Made T-Shirts", price: 699 },
+    ];
+    const drawings = [
+        { id: 1, img: pr1, title: "Pencil Drawing", price: 299 },
+        { id: 2, img: pr2, title: "Hand Made Jewellery", price: 299 },
+        { id: 3, img: pr3, title: "Hand Made Jewellery", price: 199 },
+        { id: 4, img: pr4, title: "Hand Made Bracelet", price: 99 },
+        { id: 5, img: d5, title: "Hand Made T-Shirts", price: 599 },
+        { id: 6, img: d6, title: "Hand Made T-Shirts", price: 699 },
+    ];
 
     return (
         <div>
             <Navbar user={user} onLogout={onLogout} />
-            
+
             <section id="new">
-                
                 <h4>Trade-in-offer</h4>
                 <h2>Super value deals</h2>
                 <h1>On all products</h1>
@@ -52,27 +81,59 @@ function ProductPage({ user, onLogout }) {
 
             <section id="product1" className="section1">
                 <h2>Featured Products</h2>
-                <p>Summer Collection New Modern Design</p>
+                <p>Customize Dress for Men & Women</p>
                 <div className="pro-container">
-                    <div className="pro">
-                        <img src="img/products/f1.jpg" alt="Cartoon Astronaut T-Shirts" />
-                        <div className="description">
-                            <span>Adidas</span>
-                            <h5>Cartoon Astronaut T-Shirts</h5>
-                            <div className="star">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
+                    {products.map(product => (
+                        <div key={product.id} className="pro">
+                            <img src={product.img} alt={product.title} />
+                            <div className="description">
+                                <span>Param-Sanskrit</span>
+                                <h5>{product.title}</h5>
+                                <div className="star">
+                                    <FontAwesomeIcon icon={faStar} />
+                                    <FontAwesomeIcon icon={faStar} />
+                                    <FontAwesomeIcon icon={faStar} />
+                                    <FontAwesomeIcon icon={faStar} />
+                                    <FontAwesomeIcon icon={faStar} />
+                                </div>
+
+                                <h4>₹{product.price}</h4>
                             </div>
-                            <h4>₹499</h4>
+                            <button className="cart-button" onClick={() => handleAddToCart(product.title)}>
+    <FontAwesomeIcon icon={faCartPlus} />
+  </button>
                         </div>
-                        <button onClick={handleAddToCart}>Add to Cart</button>
-                    </div>
-                    {/* Repeat for other products */}
+                    ))}
                 </div>
             </section>
+
+            <section id="product1" className="section1">
+    <h2>New Arrived Products</h2>
+    <p>Handmade products & Drawings</p>
+    <div className="pro-container">
+        {drawings.map(drawing => (
+            <div key={drawing.id} className="pro">
+                <img src={drawing.img} alt={drawing.title} />
+                <div className="description">
+                    <span>Param-Sanskrit</span>
+                    <h5>{drawing.title}</h5>
+                    <div className="star">
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                    </div>
+                    <h4>₹{drawing.price}</h4>
+                </div>
+                <button className="cart-button" onClick={() => handleAddToCart(drawing.title)}>
+                    <FontAwesomeIcon icon={faCartPlus} />
+                </button>
+            </div>
+        ))}
+    </div>
+</section>
+
 
             <section id="banner" className="section-m1">
                 <h4>Repair Services</h4>
@@ -84,7 +145,6 @@ function ProductPage({ user, onLogout }) {
                 <div className="newstext">
                     <h4>Subscribe For Newsletters</h4>
                     <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-                    
                 </div>
                 <div className="form">
                     <input type="text" placeholder="Your email address" />
@@ -94,7 +154,6 @@ function ProductPage({ user, onLogout }) {
 
             <footer className="section1">
                 <div className="col">
-                    
                     <h4>Contact</h4>
                     <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
                     <p><strong>Phone: </strong> +01 2222 365 / (+91) 012345 6789</p>
