@@ -13,7 +13,7 @@ function About() {
     <section className="section-white">
       <a href="/home" className="back-to-home">Home</a> 
       
-      <div className="container4">
+      <div className="container5">
         <div className="row">
           <div className="col-md-12 text-center">
             <h2 className="section-title">About Param-Sanskrit</h2>
