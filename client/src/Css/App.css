@@ -1,0 +1,146 @@
+/* Css/App.css */
+:root {
+    --bg-color: #ffffff;
+    --text-color: black;
+    --bg-header: transparent; /* Added if needed */
+}
+
+.body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 2rem; /* Added padding to control container width */
+    background: var(--bg-header);
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7rem; 
+}
+
+.navbar a {
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(113, 133, 249);
+}
+
+.nav-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-v2-2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.col-md-6 span {
+    color: rgb(255, 106, 0);
+}
+
+.btn2 {
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #ffffff;
+    
+    box-shadow: 5px grey;
+    margin-bottom: 20px;
+    
+}
+
+.comp {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 20px;
+    background-color: #c1e5ef;
+    border: none;
+    box-shadow: 30px 20px 20px 30px rgba(0, 0, 0, 0);
+    
+}
+
+/* Typewriter effect for words */
+.typewriter-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(60, end) forwards;
+    margin-right: 50%;
+}
+.display-4 {
+    margin-right: 24%;
+}
+.culture {
+    margin-right: 45%;
+}
+.typewriter span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing-word 1s steps(1, end) forwards;
+    opacity: 0;
+    
+}
+
+.typewriter h1 {
+    display: block;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes typing-word {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.row {
+    background-color: #c1e5ef;
+}

@@ -1,0 +1,38 @@
+/* Signup.css */
+.signup-container {
+    background-image: url('C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\im3.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-box {
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px); 
+    border: 4px solid aqua;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+  }
+  
+  .btn-register {
+    background-color: #007bff; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-register:hover {
+    background-color: #0056b3; 
+  }
+.mb-3 {
+  margin-left: 0;
+}

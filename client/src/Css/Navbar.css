@@ -1,0 +1,46 @@
+.header1 {
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem; /* Added padding to control container width */
+    background: var(--bg-header);
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    color: rgb(0, 38, 255); /* Highlight color */
+}
+
+.nav-v2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-v2-2 {
+    display: flex;
+    align-items: center;
+}
+
+.btn, .btn2 {
+    margin-left: 10px;
+}

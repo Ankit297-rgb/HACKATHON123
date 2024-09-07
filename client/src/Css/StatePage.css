@@ -1,0 +1,53 @@
+/* StatePage.css */
+
+.state-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.state-header {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.state-description {
+    font-size: 1.25rem;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.state-additional-info {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.container {
+    max-width: 800px;
+}
+/* src/Css/StatePage.css */
+
+.state-container {
+    text-align: center;
+}
+
+.state-header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.state-description,
+.state-additional-info {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.state-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

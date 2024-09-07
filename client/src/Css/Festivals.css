@@ -1,0 +1,33 @@
+.festivals-container {
+    padding: 20px;
+  }
+  
+  .festivals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .festival-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .festival-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn-primary {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  

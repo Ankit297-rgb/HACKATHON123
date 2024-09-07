@@ -1,0 +1,37 @@
+.login-container {
+    background: url('C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\im3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    
+    border: 4px solid aqua;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.mb1-3 {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}

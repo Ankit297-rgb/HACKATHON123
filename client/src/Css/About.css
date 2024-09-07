@@ -1,0 +1,123 @@
+.section-white {
+    background-size: cover;
+    padding: 60px 0;
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg');
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #060109;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .team-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .team-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-icon li {
+    margin: 0 10px;
+  }
+  
+  .team-icon a {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .team-icon a:hover {
+    color: #007bff;
+  }
+  /* Set the background color for the entire page */
+body {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the container for the About section */
+  .container3 {
+    padding: 50px;
+  }
+  
+  /* Style for the team-item box */
+  .team-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Glow effect on hover */
+  .team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the Back to Home button */
+  .back-to-home {
+    position: absolute;
+    top: 20px;
+
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #0056b3;
+  }
+  

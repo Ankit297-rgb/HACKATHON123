@@ -1,0 +1,59 @@
+/* EventSection.css */
+.event-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #c1e5ef;
+    margin-bottom: 50px;
+}
+.event-section h2 {
+    font-weight: 500px;
+    font-size: 50px;
+    
+}
+.competition-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #f7c1ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 10px #d407f4;
+    margin-top: 3%;
+}
+.competition-card:hover{
+    background-color: #f1f1f1;
+    box-shadow: 10px #d407f4;
+    transform: translateY(-12px);
+    transition-duration: 0.5s;
+}
+
+.competition-card h3 {
+    margin-top: 0;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #d6520b;
+    color: white;
+}
+
+.invitation-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #28a745;
+    background-color: #e9f7ef;
+    color: #155724;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.invitation-card h3 {
+    margin-top: 0;
+}
+
+
