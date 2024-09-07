@@ -1,4 +1,4 @@
-.container {
+.container3 {
     width: 640px;
     margin: auto;
     margin-top: 40px;
@@ -13,14 +13,14 @@
     border: 2px solid #f8f4f2;
 }
 
-.container hr {
+.container3 hr {
     height: 3px;
     border: none;
     background: #5d4037;
     margin-bottom: 30px;
 }
 
-.container h1 {
+.container3 h1 {
     font-size: 45px;
     text-transform: uppercase;
     text-align: center;
@@ -29,19 +29,19 @@
     color: #000000;
 }
 
-.container h2 {
+.container3 h2 {
     font-size: 28px;
     font-weight: 600;
     font-family: 'Merriweather', serif;
     color: #4e342e;
 }
 
-.container ul {
+.container3 ul {
     list-style: none;
     padding: 0;
 }
 
-.container ul li {
+.container3 ul li {
     display: flex;
     align-items: center;
     height: 50px;
@@ -56,12 +56,12 @@
     font-family: 'Merriweather', serif;
 }
 
-.container ul li:hover {
+.container3 ul li:hover {
     background: #efebe9;
     border-color: #000000;
 }
 
-.container button {
+.container3 button {
     margin: auto;
     width: 200px;
     height: 50px;
@@ -75,11 +75,11 @@
     font-family: 'Garamond', serif;
 }
 
-.container button:hover {
+.container3 button:hover {
     background: #6d4c41;
 }
 
-.container .index {
+.container3 .index {
     margin: auto;
     font-size: 20px;
     text-align: center;
@@ -87,12 +87,12 @@
     color: #000000;
 }
 
-.container .correct {
+.container3 .correct {
     background: #d7ffd9;
     border-color: #00c853;
 }
 
-.container .wrong {
+.container3 .wrong {
     background: #ffebee;
     border-color: #d32f2f;
 }
