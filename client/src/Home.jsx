@@ -25,7 +25,7 @@ function Home({ user, onLogout }) {
                     <a href="/about">About</a>
                     <a href="/contact">Contact Us</a>
                     <a href="/product">Product</a>
-                    <a href="/social">Social Media</a>
+                    <a href="/blog">Blog</a>
 
                 </nav>
                 <div className="nav-v2">

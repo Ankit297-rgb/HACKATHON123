@@ -17,7 +17,7 @@ function Navbar({ user, onLogout }) {
                 <a href="/about" className={isActive('/about')}>About</a>
                 <a href="/contact" className={isActive('/contact')}>Contact Us</a>
                 <a href="/product" className={isActive('/product')}>Product</a>
-                <Link to="/social" className={isActive('/social')}>Social Media</Link>
+                <Link to="/blog" className={isActive('/blog')}>Blog</Link>
 
             </nav>
             <div className="nav-v2">

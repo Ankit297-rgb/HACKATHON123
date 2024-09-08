@@ -30,7 +30,7 @@ function ProductPage({ user, onLogout }) {
         { id: 6, img: d6, title: "Hand Made T-Shirts", price: 699 },
     ];
     const drawings = [
-        { id: 1, img: pr1, title: "Pencil Drawing", price: 299 },
+        { id: 1, img: pr1, title: "Pencil Drawing", price: 99 },
         { id: 2, img: pr2, title: "Hand Made Jewellery", price: 299 },
         { id: 3, img: pr3, title: "Hand Made Jewellery", price: 199 },
         { id: 4, img: pr4, title: "Hand Made Bracelet", price: 99 },
@@ -54,27 +54,27 @@ function ProductPage({ user, onLogout }) {
 
             <section id="featurebox" className="section1">
                 <div className="feature">
-                    <img src="img/f1.png" alt="Free Shipping" />
+                    
                     <h6>Free Shipping</h6>
                 </div>
                 <div className="feature">
-                    <img src="img/f2.png" alt="Online Order" />
+                
                     <h6>Online Order</h6>
                 </div>
                 <div className="feature">
-                    <img src="img/f3.png" alt="Save Money" />
+        
                     <h6>Save Money</h6>
                 </div>
                 <div className="feature">
-                    <img src="img/f4.png" alt="Promotions" />
+        
                     <h6>Promotions</h6>
                 </div>
                 <div className="feature">
-                    <img src="img/f5.png" alt="Happy Sell" />
+                    
                     <h6>Happy Sell</h6>
                 </div>
                 <div className="feature">
-                    <img src="img/f6.png" alt="24/7 Support" />
+                
                     <h6>24/7 Support</h6>
                 </div>
             </section>

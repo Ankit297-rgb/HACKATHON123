@@ -1,8 +1,9 @@
 .container3 {
     width: 100wh;
     margin: auto;
-    margin-top: 10px;
-    background: linear-gradient(135deg, #fdfcf3, #f5e1da);
+    margin-top: 0;
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg');
+    background-size: cover;
     color: #3e2723;
     display: flex;
     flex-direction: column;
@@ -65,18 +66,19 @@
     margin: auto;
     width: 200px;
     height: 50px;
-    background: #d1865a;
+    background: #00558e;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
     border-radius: 10px;
+    border: 1px solid black;
     cursor: pointer;
     transition: background 0.3s;
     font-family: 'Garamond', serif;
 }
 
 .container3 button:hover {
-    background: #6d4c41;
+    background: #5cbeff;
 }
 
 .container3 .index {
@@ -96,3 +98,132 @@
     background: #ffebee;
     border-color: #d32f2f;
 }
+/* Heritage Section Styling */
+.heritage-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.heritage-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4e342e;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+/* Heritage Image Container */
+.heritage-img-container {
+    width: 500px;
+    height: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3e2723;
+    background-color: #fbe9e7;
+}
+
+.heritage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.heritage-img-container:hover .heritage-img {
+    transform: scale(1.05);
+}
+
+/* Heritage Input and Button Styling */
+.heritage-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heritage-input input {
+    padding: 10px 15px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #3e2723;
+    margin-right: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Merriweather', serif;
+    background: #f9f9f9;
+}
+
+.heritage-input button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    background-color: #d1865a;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Merriweather', serif;
+    border: none;
+}
+
+.heritage-input button:hover {
+    background-color: #8d6e63;
+}
+
+/* Timer and Question Counter */
+.timer, .index {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4e342e;
+    font-family: 'Merriweather', serif;
+}
+
+/* Fallback Loading Style */
+.loading-text {
+    font-size: 20px;
+    color: #757575;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .heritage-img-container {
+        width: 280px;
+        height: 180px;
+    }
+
+    .heritage-input input {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .heritage-input button {
+        font-size: 16px;
+    }
+
+    .heritage-section h2 {
+        font-size: 28px;
+    }
+}
+/* Existing styles... */
+
+.back-button {
+    position: absolute; /* Fix the button in place */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    padding: 10px 20px; /* Add padding for better appearance */
+    
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    z-index: 1000; /* Ensure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+}
+

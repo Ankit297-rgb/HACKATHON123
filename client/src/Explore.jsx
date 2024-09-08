@@ -68,7 +68,22 @@ const Explore = () => {
             />
             <div className="card-body">
               <Link to="/quiz" className="btn btn-outline-primary">
-                Quiz
+                Fun & Games
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-7">
+          <div className="card text-center p-4">
+            <img
+              src="https://thumbs.dreamstime.com/b/india-background-showing-its-incredible-culture-diversity-monument-dance-festival-illustration-106768107.jpg" // Replace with your image URL
+              alt="Quiz"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <Link to="/folklores" className="btn btn-outline-primary">
+              Folklore 
               </Link>
             </div>
           </div>

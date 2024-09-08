@@ -3,13 +3,13 @@ import './Css/EventSection.css';
 
 function EventSection({ user }) {
     const [appliedCompetitions, setAppliedCompetitions] = useState(() => {
-        // Load applied competitions from localStorage on initial render
         const storedData = localStorage.getItem(`appliedCompetitions_${user.email}`);
         return storedData ? JSON.parse(storedData) : [];
     });
 
     const [invitationVisible, setInvitationVisible] = useState(false);
     const [selectedCompetition, setSelectedCompetition] = useState('');
+    const [uniqueCode, setUniqueCode] = useState('');
 
     const initialSeats = {
         'Cultural Dance Competition': 150,
@@ -17,7 +17,6 @@ function EventSection({ user }) {
     };
 
     const [availableSeats, setAvailableSeats] = useState(() => {
-        // Load available seats from localStorage on initial render
         const storedSeats = localStorage.getItem('availableSeats');
         return storedSeats ? JSON.parse(storedSeats) : initialSeats;
     });
@@ -27,7 +26,11 @@ function EventSection({ user }) {
         { name: 'Art and Craft Exhibition', details: 'Display your artistic skills through various crafts and designs.' }
     ];
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3eePlyCTnGahjIOmqMw1vAb-QUP8WLSIr6giRhRmGgSzIlKS36_w6PXRpRtxezwCH9g/exec'; // Your Google Apps Script URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3eePlyCTnGahjIOmqMw1vAb-QUP8WLSIr6giRhRmGgSzIlKS36_w6PXRpRtxezwCH9g/exec';
+
+    const generateUniqueCode = () => {
+        return Math.random().toString(36).substr(2, 8).toUpperCase();
+    };
 
     const handleApply = (competition) => {
         if (availableSeats[competition.name] <= 0) {
@@ -41,24 +44,19 @@ function EventSection({ user }) {
         }
 
         const { email } = user;
-        const name = email.split('@')[0];
 
-        // Create a FormData object
         const formData = new FormData();
         formData.append('name', user.name);
         formData.append('email', email);
         formData.append('competition', competition.name);
 
-        // Submit the data using fetch
         fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
                 if (response.ok) {
-                    // Update applied competitions and save to localStorage
                     const newAppliedCompetitions = [...appliedCompetitions, competition.name];
                     setAppliedCompetitions(newAppliedCompetitions);
                     localStorage.setItem(`appliedCompetitions_${user.email}`, JSON.stringify(newAppliedCompetitions));
 
-                    // Decrease the seat count globally and save it to localStorage
                     const updatedSeats = {
                         ...availableSeats,
                         [competition.name]: availableSeats[competition.name] - 1
@@ -66,7 +64,8 @@ function EventSection({ user }) {
                     setAvailableSeats(updatedSeats);
                     localStorage.setItem('availableSeats', JSON.stringify(updatedSeats));
 
-                    // Show the invitation card
+                    const code = generateUniqueCode();
+                    setUniqueCode(code);
                     setSelectedCompetition(competition.name);
                     setInvitationVisible(true);
                 } else {
@@ -78,13 +77,11 @@ function EventSection({ user }) {
             });
     };
 
-    // Handle closing the invitation card
     const handleCloseInvitation = () => {
         setInvitationVisible(false);
     };
 
     useEffect(() => {
-        // Update available seats on page load from localStorage
         const storedSeats = localStorage.getItem('availableSeats');
         if (storedSeats) {
             setAvailableSeats(JSON.parse(storedSeats));
@@ -98,7 +95,11 @@ function EventSection({ user }) {
             {invitationVisible && (
                 <div className="invitation-card">
                     <h3>Congratulations, {user.name}!</h3>
-                    <p>You have been invited to the {selectedCompetition}.</p>
+                    <p>We are thrilled to inform you that your application for {selectedCompetition} has been successfully approved.</p>
+                    <p>Your passion and dedication have earned you a spot among the best, and we can’t wait to see you shine. This competition is an incredible opportunity to showcase your talents, connect with like-minded individuals, and push the boundaries of what you can achieve.
+                    <br></br><h5>--------Team Param-Sanskrit</h5>
+                    </p>
+                    <p><strong>Your Unique Code:</strong> {uniqueCode}</p>
                     <p>Your email: {user.email}</p>
                     <button className="btn btn-close" onClick={handleCloseInvitation}>Close</button>
                 </div>

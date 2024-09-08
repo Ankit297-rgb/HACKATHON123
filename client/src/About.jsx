@@ -112,7 +112,7 @@ function About() {
           <div className="col-sm-6 col-md-4">
             <div className="team-item">
               <img src={im3} className="team-img" alt="Bilash" />
-              <h3>BILASH</h3>
+              <h3>RIDDHI</h3>
               <div className="team-info">
                 <p>MEMBER 1</p>
                 <p>Techno Main Salt Lake</p>

@@ -14,8 +14,11 @@ import About from "./About";
 import Festivals from './Festivals';
 import FestivalDetails from './FestivalDetails';
 import Quiz from './Quiz';
-import "bootstrap/dist/css/bootstrap.min.css";
+import Folklores from './Folklores';
+import FolkloreDetails from './FolkloreDetails'; // Ensure correct extension
 
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,8 +41,6 @@ function App() {
   };
 
   return (
-    
-
     <BrowserRouter>
       <Routes>
         <Route path="/register" element={<Signup onLogin={handleLogin} />} />
@@ -61,7 +62,6 @@ function App() {
         
         <Route path="/explore" element={<Explore />} />
         <Route path="/state/:state" element={<StatePage />} />
-        
         <Route path="/statedetails" element={<StateDetails />} />
         <Route path="/vrexperience" element={<VRExperience />} />
         <Route path="/contact" element={<Contact user={user} onLogout={handleLogout} />} />
@@ -69,9 +69,11 @@ function App() {
         <Route path="/festivals" element={<Festivals />} />
         <Route path="/festival/:festivalName" element={<FestivalDetails />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/folklores" element={<Folklores />} />
+<Route path="/folklore/:folkloreName" element={<FolkloreDetails />} />
+        {/* Add other routes here */}
       </Routes>
     </BrowserRouter>
-    
   );
 }
 

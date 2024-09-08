@@ -66,6 +66,13 @@
     
     
   }
+  .col-md-7 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+    margin-left: 18rem;
+    
+  }
   
   @media (max-width: 768px) {
     /* Responsive design for mobile devices */
