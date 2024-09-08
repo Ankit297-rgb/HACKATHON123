@@ -1,3 +1,4 @@
+
 export const heritagePlaces = [
     {
         image: 'https://i.natgeofe.com/n/8eba070d-14e5-4d07-8bab-9db774029063/93080_4x3.jpg', // Replace with actual image paths

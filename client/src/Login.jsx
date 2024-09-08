@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
-import './Css/Login.css'; // Import the CSS file
+import './Css/Login.css'; 
 
 function Login({ onLogin }) {
-  const [name, setName] = useState('');  // Add name state
+  const [name, setName] = useState(''); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -12,25 +12,22 @@ function Login({ onLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Make sure name, email, and password are provided
     if (!name || !email || !password) {
       alert("Please fill in all the fields.");
       return;
     }
 
-    // Perform login request
     axios.post('http://localhost:3001/login', { name, email, password })
       .then(result => {
         if (result.data === "Success") {
-          onLogin({ name, email }); // Notify parent component of login
-          navigate('/home'); // Redirect to Home Page after login
+          onLogin({ name, email });  // Pass both name and email
+          navigate('/home');  // Navigate to home page on success
         } else {
           alert("Incorrect Name, Email or Password");
         }
       })
       .catch(err => console.log(err));
   };
-  
 
   return (
     <div className="login-container">
@@ -48,9 +45,9 @@ function Login({ onLogin }) {
               autoComplete="off"
               name="name"
               className="form-control rounded-0"
-              value={name}  // Bind value to state
-              onChange={(e) => setName(e.target.value)}  // Update state on change
-              required  // Make name required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
             />
           </div>
           <div className="mb-3 w-100">
@@ -64,9 +61,9 @@ function Login({ onLogin }) {
               autoComplete="off"
               name="email"
               className="form-control rounded-0"
-              value={email}  // Bind value to state
-              onChange={(e) => setEmail(e.target.value)}  // Update state on change
-              required  // Make email required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div className="mb-3 w-100">
@@ -79,9 +76,9 @@ function Login({ onLogin }) {
               placeholder="Enter Password"
               name="password"
               className="form-control rounded-0"
-              value={password}  // Bind value to state
-              onChange={(e) => setPassword(e.target.value)}  // Update state on change
-              required  // Make password required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
           <button type="submit" className="btn btn-primary w-100 rounded-0">

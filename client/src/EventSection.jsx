@@ -97,8 +97,7 @@ function EventSection({ user }) {
                     <h3>Congratulations, {user.name}!</h3>
                     <p>We are thrilled to inform you that your application for {selectedCompetition} has been successfully approved.</p>
                     <p>Your passion and dedication have earned you a spot among the best, and we can’t wait to see you shine. This competition is an incredible opportunity to showcase your talents, connect with like-minded individuals, and push the boundaries of what you can achieve.
-                    <br></br><h5>--------Team Param-Sanskrit</h5>
-                    </p>
+                    <br /><h5>--------Team Param-Sanskrit</h5></p>
                     <p><strong>Your Unique Code:</strong> {uniqueCode}</p>
                     <p>Your email: {user.email}</p>
                     <button className="btn btn-close" onClick={handleCloseInvitation}>Close</button>

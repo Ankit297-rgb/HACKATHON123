@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Signup from "./Signup";
@@ -15,9 +16,9 @@ import Festivals from './Festivals';
 import FestivalDetails from './FestivalDetails';
 import Quiz from './Quiz';
 import Folklores from './Folklores';
-import FolkloreDetails from './FolkloreDetails'; // Ensure correct extension
-
-
+import FolkloreDetails from './FolkloreDetails';
+import BlogPage from './BlogPage';
+import Learning from './Learning';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter> {/* Ensure BrowserRouter is here */}
       <Routes>
         <Route path="/register" element={<Signup onLogin={handleLogin} />} />
         <Route 
@@ -70,10 +71,13 @@ function App() {
         <Route path="/festival/:festivalName" element={<FestivalDetails />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/folklores" element={<Folklores />} />
-<Route path="/folklore/:folkloreName" element={<FolkloreDetails />} />
-        {/* Add other routes here */}
+        <Route path="/folklore/:folkloreName" element={<FolkloreDetails />} />
+        <Route path="/blog" element={<BlogPage username={user ? user.name : ''} />} />
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route path="/home" element={user ? <BlogPage username={user.name} /> : <Login onLogin={handleLogin} />} />
+        <Route path="/learning" element={<Learning />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> // Close BrowserRouter here
   );
 }
 
