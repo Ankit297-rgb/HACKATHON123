@@ -1,10 +1,33 @@
+/* FestivalDetails.css */
+
 .festival-details-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .festival-details-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  background-color: #f7f7f7; /* Light grey background color */
+  padding: 40px; /* Adds padding around the content */
+  margin: 20px auto; /* Centers the container */
+  max-width: 1000px; /* Constrains the width */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-image: url('C:\Users\bdas2\OneDrive\Desktop\New folder\Hackathon1\client\src\image\background.jpg');
+  background-size: cover;
+}
+
+.festival-details-container h1 {
+  color: #333; /* Darker text for headings */
+  font-size: 2.5rem; /* Increase heading size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.festival-details-image {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+
+.festival-details-container p {
+  color: #555; /* Slightly lighter color for the description */
+  line-height: 1.6;
+  font-size: 1.2rem;
+}

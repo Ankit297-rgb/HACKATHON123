@@ -6,7 +6,10 @@
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  background: linear-gradient(135deg, #f6f9fc, #e9eff2);
+  background-image: url("C:\Users\bdas2\OneDrive\Desktop\New folder\Hackathon1\client\src\image\background.jpg");
+  background-size: cover;
+  margin-top: 90px;
+  margin-bottom: 10px;
 }
 
 .contact-form {
@@ -47,6 +50,10 @@ textarea {
 textarea {
   height: 150px;
   resize: none;
+  margin-bottom: 10px;
+}
+.submit-btn {
+  margin-top: 10px;
 }
 
 input[type="submit"].submit-btn {

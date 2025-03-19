@@ -1,0 +1,139 @@
+/* CourseMaterial.css */
+
+/* General Styles */
+.course-material-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    background: #e3f2fd; /* Light blue background */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #0288d1; /* Vibrant blue for titles */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.completion-section, .notes-section, .video-section, .quiz-section {
+    background: #ffffff;
+    border: 2px solid #b3e5fc; /* Light blue border */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.completion-section {
+    background: #e1f5fe;
+}
+
+.notes-section {
+    background: #bbdefb;
+}
+
+.video-section {
+    background: #cfe3fc;
+}
+
+.quiz-section {
+    background: #9adaff;
+}
+
+.completion-section h2, .notes-section h2, .video-section h2, .quiz-section h2 {
+    font-size: 2rem;
+    color: #0277bd; /* Darker blue for headings */
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.notes-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #039be5; /* Bright blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0288d1; /* Darker blue */
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #b0bec5; /* Grey for disabled state */
+    cursor: not-allowed;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ReactPlayer {
+    border-radius: 12px;
+    border: 4px solid #039be5; /* Bright blue border around video */
+}
+
+.quiz-question {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-question p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-question input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #e9f2f9;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    border-color: #039be5; /* Blue border on focus */
+    outline: none;
+}
+
+footer {
+    background-color: #0288d1; /* Dark blue for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        padding: 1rem;
+    }
+
+    .course-material-container {
+        padding: 1rem;
+    }
+}

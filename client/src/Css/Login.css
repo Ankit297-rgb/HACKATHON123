@@ -1,5 +1,5 @@
 .login-container {
-    background: url('C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\im3.jpg') no-repeat center center fixed;
+    background: url('C:\\Users\\chatt\\OneDrive\\Documents\\Desktop\\SIH_PROJECT\\client\\src\\image\\im3.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh; 
     display: flex;
@@ -35,3 +35,9 @@
     background-color: #0056b3;
     cursor: pointer;
 }
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  

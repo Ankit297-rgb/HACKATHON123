@@ -4,7 +4,7 @@ import './Css/EventSection.css';
 function EventSection({ user }) {
     const [appliedCompetitions, setAppliedCompetitions] = useState(() => {
         const storedData = localStorage.getItem(`appliedCompetitions_${user.email}`);
-        return storedData ? JSON.parse(storedData) : [];
+        return storedData ? JSON.parse(storedData) : {};
     });
 
     const [invitationVisible, setInvitationVisible] = useState(false);
@@ -38,7 +38,7 @@ function EventSection({ user }) {
             return;
         }
 
-        if (appliedCompetitions.includes(competition.name)) {
+        if (appliedCompetitions[competition.name]) {
             alert('You have already applied for this competition.');
             return;
         }
@@ -53,7 +53,12 @@ function EventSection({ user }) {
         fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
                 if (response.ok) {
-                    const newAppliedCompetitions = [...appliedCompetitions, competition.name];
+                    const code = generateUniqueCode();
+
+                    const newAppliedCompetitions = {
+                        ...appliedCompetitions,
+                        [competition.name]: code
+                    };
                     setAppliedCompetitions(newAppliedCompetitions);
                     localStorage.setItem(`appliedCompetitions_${user.email}`, JSON.stringify(newAppliedCompetitions));
 
@@ -64,7 +69,6 @@ function EventSection({ user }) {
                     setAvailableSeats(updatedSeats);
                     localStorage.setItem('availableSeats', JSON.stringify(updatedSeats));
 
-                    const code = generateUniqueCode();
                     setUniqueCode(code);
                     setSelectedCompetition(competition.name);
                     setInvitationVisible(true);
@@ -95,32 +99,44 @@ function EventSection({ user }) {
             {invitationVisible && (
                 <div className="invitation-card">
                     <h3>Congratulations, {user.name}!</h3>
+                    <p className='coma'>Competition name :- {selectedCompetition}</p>
                     <p>We are thrilled to inform you that your application for {selectedCompetition} has been successfully approved.</p>
-                    <p>Your passion and dedication have earned you a spot among the best, and we can’t wait to see you shine. This competition is an incredible opportunity to showcase your talents, connect with like-minded individuals, and push the boundaries of what you can achieve.
-                    <br /><h5>--------Team Param-Sanskrit</h5></p>
-                    <p><strong>Your Unique Code:</strong> {uniqueCode}</p>
-                    <p>Your email: {user.email}</p>
+                    <p>Congratulations on earning a coveted spot among the best in this competition! Your dedication and passion have truly set you apart, and this is your moment to shine. This competition is not just a platform to showcase your exceptional talents, but also an incredible opportunity to connect with other talented individuals who share your enthusiasm and drive.
+
+As you step into this exciting challenge, embrace the chance to push the boundaries of what you can achieve. This is a time to explore new ideas, innovate, and truly demonstrate your skills. Remember, every great achievement begins with the courage to take on new challenges and the determination to see them through.
+
+We are genuinely excited to see how you will rise to the occasion and make the most of this opportunity. Best of luck—may this experience be both rewarding and inspiring as you continue to pursue your dreams and make a mark in your field.</p>
+                    <h5 className='param'>--------Team Param-Sanskrit</h5>
+                    <p className='unik'><strong>Your Unique Code:</strong> {uniqueCode}</p>
+                    <p className='unik'><strong>Your email:</strong> {user.email}</p>
                     <button className="btn btn-close" onClick={handleCloseInvitation}>Close</button>
                 </div>
             )}
 
-            {competitions.map((competition, index) => (
-                <div key={index} className="competition-card">
-                    <h3>{competition.name}</h3>
-                    <p>{competition.details}</p>
-                    <p>Collaboration with: ABC School</p>
-                    <p>Available Seats: {availableSeats[competition.name]}</p>
+            <div className="competition-container">
+                {competitions.map((competition, index) => (
+                    <div key={index} className="competition-card">
+                        <h3>{competition.name}</h3>
+                        <p>{competition.details}</p>
+                        <p>Collaboration with: ABC School</p>
+                        <p>Available Seats: {availableSeats[competition.name]}</p>
 
-                    {appliedCompetitions.includes(competition.name) ? (
-                        <button className="btn btn-secondary" onClick={() => {
-                            setSelectedCompetition(competition.name);
-                            setInvitationVisible(true);
-                        }}>Invited</button>
-                    ) : (
-                        <button className="btn btn-success" onClick={() => handleApply(competition)}>Apply</button>
-                    )}
-                </div>
-            ))}
+                        {appliedCompetitions[competition.name] ? (
+                            <div>
+                                <p><strong>Unique Code:</strong> {appliedCompetitions[competition.name]}</p>
+                                <button className="btn btn-secondary" onClick={() => {
+                                    setSelectedCompetition(competition.name);
+                                    setUniqueCode(appliedCompetitions[competition.name]);
+                                    setInvitationVisible(true);
+                                }}>View Invitation</button>
+                            </div>
+                        ) : (
+                            <button className="btn btn-success" onClick={() => handleApply(competition)}>Apply</button>
+                        )}
+                    </div>
+                    
+                ))}
+            </div>
         </div>
     );
 }

@@ -6,9 +6,9 @@ import './Css/Folklore.css'; // Create a CSS file for styling
 const Folklores = () => {
   const folkloreList = [
     {
-      name: 'Panchatantra',
+      name: 'Vikram-Betal',
       imageUrl: 'https://example.com/panchatantra.jpg', // Replace with actual image URL
-      path: '/folklore/panchatantra'
+      path: '/folklore/vikrambetal'
     },
     {
       name: 'Birbal Stories',
@@ -16,9 +16,9 @@ const Folklores = () => {
       path: '/folklore/birbal'
     },
     {
-      name: 'Akbar and Birbal',
+      name: 'Gopal Bhar',
       imageUrl: 'https://example.com/akbar_birbal.jpg', // Replace with actual image URL
-      path: '/folklore/akbar-birbal'
+      path: '/folklore/gopal-bhar'
     }
     // Add more folklores as needed
   ];

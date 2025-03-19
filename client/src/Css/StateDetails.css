@@ -1,86 +1,24 @@
 .title {
-    margin-top: 95%;
-    
+  margin-top: 95%;
+  
 }
 
 .container2 {
-    position: relative; 
-    
+  position: relative; 
+  
 
-  }
-  
-  .back-to-explore {
-    position: absolute; 
-    top: 10px; 
-    right: 10px; 
-    z-index: 1000;
-  }
-  .state-details-container {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .back-to-explore {
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-family: 'Noto Sans', sans-serif;
-    color: #000000; /* Indian red color */
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .search-bar input {
-    border: 2px solid #4fa2d9;
-    border-radius: 4px;
-    
-    
-  }
-  
-  .state-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+}
 
-  }
-  
-  .state-card {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    max-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    background-color: transparent;
-  }
-  
-  .state-card .btn {
-    width: 100%;
-    border: 2px solid #4f9fd9;
-    color: #000000;
-    
-  }
-  
-  .state-card .btn:hover {
-    background-color: #4f9fd9;
-    color: #fff;
-  }
-  /* StateDetails.css */
-
+.back-to-explore {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  z-index: 1000;
+}
 .state-details-container {
-  background-image: url('C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\flag.avif');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  color: #fff; /* Adjust text color for better readability if needed */
-  padding: 20px; /* Adjust padding as necessary */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .back-to-explore {
@@ -88,15 +26,78 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #000000; /* Indian red color */
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.search-bar {
-  margin-bottom: 20px;
+.search-bar input {
+  border: 2px solid #4fa2d9;
+  border-radius: 4px;
+  
   
 }
 
+.state-list {
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
 .state-card {
-  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  background-color: transparent;
+}
+
+.state-card .btn {
+  width: 100%;
+  border: 2px solid #4f9fd9;
+  color: #000000;
+  
+}
+
+.state-card .btn:hover {
+  background-color: #4f9fd9;
+  color: #fff;
+}
+/* StateDetails.css */
+
+.state-details-container {
+background-image: url('C:\Users\bdas2\OneDrive\Desktop\New folder\Hackathon1\client\src\image\flag.avif');
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+color: #fff; /* Adjust text color for better readability if needed */
+padding: 20px; /* Adjust padding as necessary */
+}
+
+.back-to-explore {
+margin-bottom: 20px;
+}
+
+.title {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.search-bar {
+margin-bottom: 20px;
+
+}
+
+.state-card {
+margin-bottom: 10px;
 }

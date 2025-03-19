@@ -1,0 +1,22 @@
+.profile-page {
+    text-align: center;
+  }
+  
+  .profile-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+  }
+  

@@ -1,0 +1,159 @@
+.payment-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-item {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.payment-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-item-image {
+    width: 100%; /* Responsive image */
+    max-width: 200px; /* Max width for the image */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Full width buttons */
+    margin-top: 20px;
+}
+
+.payment-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0; /* Space between buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.no-items {
+    text-align: center;
+    color: #dc3545; /* Red color for error message */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .payment-item {
+        padding: 10px; /* Reduced padding for items */
+    }
+
+    .payment-item-image {
+        max-width: 150px; /* Smaller image on smaller screens */
+    }
+
+    .payment-button {
+        font-size: 14px; /* Smaller font for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; /* Smaller heading */
+    }
+
+    .payment-item h3 {
+        font-size: 1.2em; /* Smaller title */
+    }
+}
+.payment-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.payment-item-image {
+    width: 80px; /* Fixed image size */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons */
+    margin-top: 20px;
+}
+
+.payment-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0; /* Space between buttons */
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for buttons */
+    max-width: 300px; /* Limit the max width */
+}
+
+.payment-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.no-items {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}

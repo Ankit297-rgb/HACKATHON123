@@ -1,0 +1,48 @@
+.food-details-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .food-image {
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .history-section {
+    background-color: #fff7e0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .recipe-section {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .recipe-list {
+    list-style-type: disc;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  
+  .recipe-step {
+    margin-bottom: 10px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  

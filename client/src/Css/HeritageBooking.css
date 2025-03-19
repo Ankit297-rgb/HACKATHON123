@@ -1,0 +1,188 @@
+/* Main heritage booking container */
+.heritage-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Make the container more flexible */
+    max-width: 600px; /* Restrict the maximum width */
+    height: 120vh; /* Reduce the box height */
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+    background-color: #fff; /* White background */
+    position: relative;
+    background-color: #c1e5ef;
+}
+
+/* Text center alignment for tour info */
+.tour-info {
+    font-size: large;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.book-tour-section {
+    margin-top: 0;
+    margin-bottom: 30%;
+    
+}
+.book-tour-section h2 {
+    margin-bottom: 50px;
+}
+
+.book-tour-section p {
+    font-size: 18px;
+}
+/* Larger text for the heading */
+.tour-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* General text */
+.tour-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* General button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* Label styling with input and textarea */
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    width: 100%; /* Ensure full width inside the div */
+}
+
+/* Input fields styling */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Control the height of the textarea */
+textarea {
+    resize: vertical;
+    min-height: 80px; /* Reduce the minimum height */
+}
+
+/* Responsive button layout for the form */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Invitation card styling */
+.invitation-card1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Close card button styling */
+.close-card1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Hover effect for close button */
+.close-card1:hover {
+    color: #ffffff;
+}
+
+/* Invitation card content */
+.invitation-card1 h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Invitation card text */
+.invitation-card1 p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .heritage-booking {
+        width: 95%; /* Increase width on smaller screens */
+        height: auto; /* Adjust height based on content */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .tour-info h2 {
+        font-size: 1.6rem; /* Slightly smaller text */
+    }
+
+    .tour-info p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 12px; /* Adjust button size */
+        font-size: 0.9rem; /* Reduce font size on smaller screens */
+    }
+
+    .invitation-card1 {
+        width: 90%;
+        max-width: 400px; /* Reduce card size for small screens */
+        padding: 15px;
+    }
+
+    .invitation-card1 h3 {
+        font-size: 1.4rem;
+    }
+
+    .invitation-card1 p {
+        font-size: 0.9rem;
+    }
+}

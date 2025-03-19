@@ -1,101 +1,114 @@
 /* Container and general padding */
 .container1 {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 10%;
-    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg');
-    background-size: cover;
-  }
-  
-  h1.display-5 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #2c3e50;
-  }
-  
-  /* Card styling */
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
-  }
-  
-  
-  .card:hover {
-    transform: translateY(-5px);
-    background-color: #fddefa;
-    box-shadow: 0 0 20px #fd65ed; /* Green glow effect */
-    transform: scale(1.05); /* Slightly enlarge the card on hover */
-    
-  }
-  
-  /* Button styling */
-  .btn-outline-primary {
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 2px solid #3498db;
-    color: #3498db;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: #3498db;
-    color: white;
-    border-color: #3498db;
-    
-  }
-  
-  /* Flexbox for cards */
-  .row1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-  }
-  
-  .col-md-6 {
-    flex: 0 0 48%;
-    max-width: 48%;
-    margin-bottom: 20px;
-    
-    
-  }
-  .col-md-7 {
-    flex: 0 0 48%;
-    max-width: 48%;
-    margin-bottom: 20px;
-    margin-left: 18rem;
-    
-  }
-  
-  @media (max-width: 768px) {
-    /* Responsive design for mobile devices */
-    .col-md-6 {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 90px;
+  background-image: url('C:\Users\bdas2\OneDrive\Desktop\New folder\Hackathon1\client\src\image\background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1.display-5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Card styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #fddefa;
+  box-shadow: 0 0 20px #fd65ed; /* Glow effect */
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Button styling */
+.btn-outline-primary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #3498db;
+  color: #3498db;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Flexbox for cards */
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Card column styling */
+.col-md-6 {
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-bottom: 40px;
+}
+.col-md-7 {
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-bottom: 40px;
+}
+
+.first, .second, .third, .fourth {
+  padding: 0 10px; /* Add horizontal padding to columns */
+}
+
+@media (max-width: 768px) {
+  /* Responsive design for mobile devices */
+  .col-md-6, .col-md-7 {
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 20px;
-    }
   }
   
-  .text-center {
-    text-align: center;
+  h1.display-5 {
+      font-size: 2rem; /* Adjust font size on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further adjustments for very small screens */
+  h1.display-5 {
+      font-size: 1.75rem; /* Smaller font for very small screens */
   }
   
-  .pt-5 {
-    padding-top: 3rem;
+  .btn-outline-primary {
+      font-size: 1rem; /* Smaller button text */
+      padding: 8px 16px; /* Smaller padding for buttons */
   }
-  
-  .mb-4 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .p-4 {
-    padding: 2rem;
-  }
-  
+}
+
+/* Text centering */
+.text-center {
+  text-align: center;
+}
+
+/* Padding and margin classes */
+.pt-5 {
+  padding-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}

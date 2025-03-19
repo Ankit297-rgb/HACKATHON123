@@ -1,27 +1,70 @@
-// stateData.js
-import andhraPradeshPic from 'C:\\Users\\chatt\\OneDrive\\Desktop\\SIH_PROJECT\\client\\src\\image\\andhra.jpg';
-
+// src/components/stateData.js
 
 const stateData = {
   "Andhra Pradesh": {
-    description: "Andhra Pradesh is located in the southeastern coast of India.",
-    additionalInfo: "It is known for its rich cultural heritage and the city of Visakhapatnam.",
-    picture: andhraPradeshPic // Reference the imported image
+    description: "Andhra Pradesh is located on the southeastern coast of India.",
+    additionalInfo: `Andhra Pradesh, situated on the southeastern coast of India, is a state steeped in rich cultural and historical significance. The state is renowned for its diverse cultural landscape, which is a testament to its long and storied history. The Telugu language, which is the predominant language of the state, plays a central role in its cultural identity. Telugu literature and poetry have been significant in shaping the state’s cultural narrative, reflecting its traditions, values, and historical experiences.`,
+    header1: `The classical dance form of Kuchipudi is one of Andhra Pradesh’s most celebrated cultural contributions. Originating from the Krishna district, Kuchipudi is a dance-drama tradition known for its graceful movements and expressive storytelling. It often involves elaborate costumes, intricate footwork, and a combination of dance and acting that narrates stories from Hindu mythology. This art form is not only performed in India but has also gained recognition on international stages.`,
+    header2: `In addition to Kuchipudi, Andhra Pradesh has a rich musical heritage that includes the Carnatic tradition. This classical music style is characterized by its complex rhythms and melodic patterns, with performances often featuring traditional instruments such as the veena, flute, and mridangam. Carnatic music is an integral part of religious and cultural festivals, and its influence can be seen in various aspects of Andhra’s cultural life.`,
+    header3: `The cuisine of Andhra Pradesh is another reflection of its vibrant culture. Known for its spicy and flavorful dishes, the state’s culinary traditions include a variety of rice-based dishes, chutneys, and pickles. Signature dishes such as pulihora (tamarind rice) and gongura pachadi (sorrel leaf chutney) exemplify the bold flavors that are characteristic of Andhra cuisine. The Hyderabadi biryani, though associated with Hyderabad, a major city in the state, is famed for its aromatic spices and is enjoyed across the country.`,
+    header4: `Andhra Pradesh’s heritage is marked by its historical and architectural marvels. The state is home to some of India’s most iconic landmarks, such as the Tirupati Balaji Temple. This sacred Hindu shrine is dedicated to Lord Venkateswara and attracts millions of pilgrims annually. The temple complex, with its intricate architecture and devotional atmosphere, is a significant cultural and spiritual site.`,
+    header5: `Another notable heritage site is the Lepakshi Temple, renowned for its remarkable frescoes and carvings. The temple’s architecture showcases the grandeur of the Vijayanagara Empire, with its detailed sculptures and the famous Nandi bull statue. Amaravati, once a prominent Buddhist center, is known for its ancient stupas and inscriptions, highlighting the region’s Buddhist heritage.`,
+    header6: `The Golconda Fort and Charminar, though situated in modern-day Telangana, are significant to the shared history and culture of the region. The Golconda Fort, with its impressive fortifications and acoustics, and the Charminar, an iconic monument with its four grand arches, reflect the architectural brilliance of the Qutb Shahi dynasty.`,
+    
+    picture: 'https://3.bp.blogspot.com/-Z5PavvpKmXo/V8hl-QrPuwI/AAAAAAAAOLM/qgqP4Mr266MHEcLLhldd80oXft0gNwu6ACK4B/s1600/ap.jpg',
+    modelUrl: "url_to_andhra_pradesh_model" // No 3D model available
   },
   "Arunachal Pradesh": {
-    description: "Arunachal Pradesh is a state in northeastern India.",
-    additionalInfo: "It is known for its natural beauty and tribal culture.",
-    picture: "url_to_arunachal_pradesh_picture.jpg" // Add the URL to the image
+    description: "Arunachal Pradesh is a state located in the northeastern region of India.",
+    additionalInfo: "It is known for its **natural beauty**, **tribal culture**, and being one of the most sparsely populated states in India.",
+    header: "Cultural and Heritage Insights of Arunachal Pradesh:",
+    header1: "Key Highlights:",
+    header2: [
+      "**Tawang Monastery**: One of the largest monasteries in India, located in the Tawang district.",
+      "**Siang River**: A prominent river in Arunachal Pradesh, popular for river rafting.",
+      "**Tribal Culture**: Home to several tribes like the Nyishi, Apatani, and Adi, each with unique traditions."
+    ],
+    header3: [
+      "**Ziro Valley**: Known for its picturesque landscape and the Ziro Music Festival.",
+      "**Itanagar**: The capital city, known for its ancient fort and the Ita Fort."
+    ],
+    picture: null,
+    modelUrl: null // No 3D model available
   },
-  // Add more states and their data here
   "West Bengal": {
-    description: "West Bengal is a state in eastern India.",
-    additionalInfo: "It is known for its historical landmarks and the city of Kolkata.",
-    picture: "url_to_west_bengal_picture.jpg" // Add the URL to the image
+    description: "West Bengal is a state located in the eastern region of India.",
+    additionalInfo: `Culture of West Bengal West Bengal is a state that radiates a rich cultural legacy, deeply rooted in intellectualism, literature, and arts. The Bengali language, spoken by the majority, is not just a mode of communication but a symbol of pride and identity. The state celebrates its culture through various grand festivals like Durga Puja and Kali Puja, where vibrant pandals and artistic idols reflect the creativity of the people. West Bengal’s culinary landscape is diverse, offering a mix of flavors from mustard-based fish dishes to the world-renowned sweets like rosogolla and mishti doi. Known as the "Cultural Capital of India," Kolkata has been a hub of literary giants such as Rabindranath Tagore and Sarat Chandra Chattopadhyay, making the state synonymous with artistic and intellectual endeavors. Traditional music and dance, including Rabindra Sangeet and the classical dance forms of Gaudiya Nritya and Chhau, play a vital role in Bengal’s cultural expression.`,
+    header1: `Heritage of West Bengal: 
+  West Bengal's heritage is deeply tied to its historical architecture and rich past. Kolkata, the state’s capital, boasts colonial structures like the Victoria Memorial and Howrah Bridge, reflecting the state’s British influence. The terracotta temples of Bishnupur, adorned with intricate carvings, stand as a testament to the region’s ancient architectural brilliance. In Murshidabad, the remnants of the Nawabi era, particularly the Hazarduari Palace, offer a glimpse into the grandeur of Bengal's past. Meanwhile, Shantiniketan, established by Rabindranath Tagore, remains a beacon of Bengal's heritage in literature, arts, and cultural exchange. The artistic legacy of Bengal is also captured in its many museums, including the Indian Museum in Kolkata, which houses artifacts of immense cultural significance.`,
+    header2: `Art of West Bengal:  
+  Artistic traditions in West Bengal span from ancient terracotta work to modern-day fine arts. The Bengal School of Art, pioneered by Abanindranath Tagore, played a significant role in reviving Indian artistic traditions during the colonial period. This school emphasized the revival of Indian themes and techniques, breaking away from Western influences. Terracotta art, especially the intricate work on the temples of Bishnupur, is a unique form of expression that dates back centuries. The scroll paintings of Patachitra, popular in rural Bengal, depict religious stories and myths, often accompanied by folk songs. The Kalighat paintings, originating from the Kalighat area of Kolkata, are another notable art form, blending traditional themes with a contemporary, satirical twist. In modern times, West Bengal continues to be a cradle for visual arts, with numerous artists drawing inspiration from the state’s rich cultural heritage.`,
+    header3: `Folklore of West Bengal:  
+  The folklore of West Bengal is woven into its daily life, filled with myths, legends, and tales of gods, heroes, and local deities. Folk traditions like Baul songs, a form of mystical music, reflect the spiritual and philosophical beliefs of Bengal. The Bauls, with their unique songs and way of life, are wandering minstrels who express their devotion through music and dance. The Chhau dance, especially popular in Purulia, is a masked dance form that narrates stories from epics like the Ramayana and Mahabharata. West Bengal is also known for its vibrant folk theatre forms like Jatra, which brings to life tales of valor, devotion, and moral lessons. These folk traditions have been passed down through generations and continue to hold significance in the rural and urban life of the state, serving as a living link to Bengal’s past.`,
+    header4: `Historical Significance: 
+West Bengal's historical significance is deeply intertwined with its rich past and strategic location. Historically, it was a prominent region in ancient India, with important cities like Pataliputra (modern Patna) serving as major centers of learning and culture. During the medieval period, Bengal was a flourishing center of trade and culture under various dynasties, including the Pala Empire and the Bengal Sultanate. The region's importance continued through the Mughal era, with Bengal being a major province under Mughal rule. The British East India Company established its base in Kolkata in the 18th century, marking the beginning of significant colonial influence. This historical layering has left West Bengal with a diverse cultural and architectural heritage that reflects various epochs of Indian history.`,
+    header5: `Natural Beauty:
+West Bengal is renowned for its diverse natural landscapes, ranging from the majestic Himalayas to the serene Sundarbans. The northern part of the state, including the Darjeeling Hills and the Dooars region, offers stunning views of the Himalayas and lush tea gardens. The Darjeeling Himalayan Railway, a UNESCO World Heritage site, provides a charming journey through these scenic landscapes. The Sundarbans, located in the southern part of West Bengal, is the largest delta in the world and a UNESCO World Heritage site famous for its unique mangrove forests and the Bengal tiger. Additionally, the state boasts several picturesque rivers, including the Hooghly and the Ganges, which play a vital role in the cultural and economic life of the region.`,
+    header6: `Modern Developments: 
+In recent years, West Bengal has made significant strides in various fields, including education, technology, and industry. Kolkata, the state capital, has emerged as a major IT hub, with numerous tech parks and IT companies establishing their presence in the city. The state's educational institutions, including the University of Calcutta and Jadavpur University, are renowned for their academic excellence and research contributions. West Bengal has also focused on infrastructure development, with improvements in transportation, healthcare, and urban amenities. The state government has been working on various initiatives to boost tourism, enhance cultural preservation, and promote sustainable development, making West Bengal a dynamic and evolving region in contemporary India.`,
+    
+    picture: "https://www.adotrip.com/public/images/state/contentImg/5f48f982d3cb0.jpg",
+    modelUrl: "url_to_west_bengal_model" // Add the 3D model URL here
+  },
+  "Uttar Pradesh": {
+    description: "Uttar Pradesh is a state in northern India, known for its rich cultural heritage and historical significance.",
+    
+    additionalInfo: `Uttar Pradesh, located in the northern part of India, is a state steeped in rich cultural heritage, history, and folklore. Its cultural landscape has been shaped by centuries of confluence between ancient Hindu traditions, Mughal influences, and various other cultural interactions, making it a significant cultural hub in the country.`,
+    header1: `The state is home to some of the most iconic landmarks in India, with the Taj Mahal in Agra standing as a symbol of eternal love and one of the Seven Wonders of the World. Built by the Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, the Taj Mahal is not only an architectural masterpiece but also a representation of the intricate craftsmanship that flourished during the Mughal period. Alongside it, Agra Fort stands as a testimony to the grandeur of Mughal architecture, showcasing the blend of military and aesthetic elements. The state’s association with the Mughals extends to Fatehpur Sikri, a former capital known for its majestic palaces and the imposing Buland Darwaza.`,
+    header2:`Apart from its Mughal heritage, Uttar Pradesh holds immense religious and spiritual significance. The city of Varanasi, one of the oldest continuously inhabited cities in the world, is a sacred place for Hindus. Varanasi, situated on the banks of the Ganges River, is famous for its ghats where daily rituals, prayers, and the revered Ganga Aarti take place. It is believed that taking a dip in the Ganges in Varanasi can cleanse one’s soul and bring salvation. Similarly, Ayodhya, regarded as the birthplace of Lord Rama, holds a central place in Hindu mythology and religion. The city has been the focal point of many religious narratives, most notably the epic Ramayana, and continues to be a major pilgrimage destination.`,
+    header3:`The folklore of Uttar Pradesh is equally rich, deeply rooted in the traditions and beliefs of its people. The oral tradition has been a major aspect of the cultural fabric, with epic tales, ballads, and local legends passed down through generations. These folk tales often revolve around gods, kings, and heroes, reflecting the moral values and spiritual beliefs of the people. One prominent example is the Ramlila, a dramatic reenactment of the life of Lord Rama. The Ramlila, performed annually in many parts of the state, especially in Varanasi and Ayodhya, is a vibrant display of devotion and cultural expression, combining theatre, music, and dance to narrate the story of the Ramayana.`,
+    header4:`The state is also known for its vibrant and diverse folk music and dance traditions. The Braj region, associated with the childhood of Lord Krishna, is known for its devotional songs and dances, particularly during festivals like Holi. Folk music such as Birha and Kajri reflect the emotions and lives of the rural population, often dealing with themes of love, separation, and daily struggles. These songs are usually performed during social gatherings, festivals, and special occasions, creating a deep connection between the performer and the audience.`,
+    header5: `In addition to its religious and folk traditions, Uttar Pradesh has a long-standing tradition of craftsmanship. The state is famous for its intricate zari work, chikan embroidery, and Banarasi silk saris, which are sought after across the country and globally. The city of Lucknow, in particular, is renowned for its chikan work, a delicate form of hand embroidery that is a significant part of the region’s identity.`,
+    header6: `In essence, Uttar Pradesh is a melting pot of history, spirituality, and artistic traditions. Its heritage sites, religious landmarks, folk traditions, and artistic expressions together form a rich tapestry that continues to influence not just the state, but also the cultural ethos of India as a whole. The blend of ancient Hindu practices, Mughal opulence, and rural folklore creates a unique cultural narrative that is both diverse and deeply rooted in the traditions of the land.`,
+    
+    
+    picture: 'https://inspirationseek.com/wp-content/uploads/2014/06/Taj-Mahal-Photos.jpg',
+    modelUrl: "https://sketchfab.com/models/1eb09052f6cd421caeaa6cb3204cb15d/embed"
   }
 };
-
-
-
 
 export default stateData;

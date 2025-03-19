@@ -1,0 +1,148 @@
+/* Learning.css */
+
+.learning-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color for contrast */
+}
+
+.header2 {
+    background: linear-gradient(135deg, #1f88ff, #b2f3e5); /* Gradient background */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.header2 h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header2 p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.search-container {
+    margin-top: 1.5rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-button {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2251fc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #061fff;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.courses {
+    padding: 2rem;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 1rem;
+}
+
+.course-info h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.course-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.enroll-button,
+.view-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.enroll-button {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.enroll-button:hover {
+    background-color: #357abd;
+}
+
+.view-button {
+    background-color: #1f66ff;
+    color: white;
+}
+
+.view-button:hover {
+    background-color: #004cff;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    position: relative;
+    background-color: transparent;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40%;
+}

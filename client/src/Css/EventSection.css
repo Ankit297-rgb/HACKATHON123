@@ -1,35 +1,78 @@
-/* EventSection.css */
+/* General Styles */
 .event-section {
-    margin-top: 20px;
     padding: 20px;
-    background-color: #c1e5ef;
-    margin-bottom: 50px;
-}
-.event-section h2 {
-    font-weight: 500px;
-    font-size: 50px;
-    
-}
-.competition-card {
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #f7c1ff;
-    border-radius: 5px;
-    background-color: #ffffff;
-    width: 50%;
-    margin-left: 25%;
-    box-shadow: 10px #d407f4;
-    margin-top: 3%;
-}
-.competition-card:hover{
-    background-color: #f1f1f1;
-    box-shadow: 10px #d407f4;
-    transform: translateY(-12px);
-    transition-duration: 0.5s;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
 }
 
-.competition-card h3 {
-    margin-top: 0;
+.comp {
+    width: 94%;
+    margin-right: 20%;
+    margin-left: 3%;
+}
+
+.event-section h2 {
+    font-size: 45px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Competition Cards */
+.competition-container {
+    height: 45vh;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.competition-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 40px); /* Two columns on medium screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.coma {
+    color: #ff152d;
+    font-size: 25px;
+}
+
+.param {
+    color: #28a745;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.unik {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.competition-card:hover {
+    background: #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .btn-success {
@@ -38,22 +81,132 @@
 }
 
 .btn-secondary {
-    background-color: #d6520b;
+    background-color: #6c757d;
     color: white;
 }
 
+.btn-close {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Invitation Card */
 .invitation-card {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #28a745;
-    background-color: #e9f7ef;
-    color: #155724;
-    border-radius: 5px;
-    text-align: center;
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 94%;
+    height: 730px;
+    width: 100%;
+    z-index: 1000;
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg');
+    background-size: cover;
 }
 
 .invitation-card h3 {
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
+.invitation-card button {
+    margin-top: 5%;
+    border: 2px solid black;
+    color: #000;
+    margin-left: 45%;
+}
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .competition-card {
+        width: calc(100% - 40px); /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .competition-card {
+        width: calc(100% - 40px); /* Full width on small screens */
+        height: auto; /* Dynamic height based on content */
+        padding: 15px; /* Adjust padding */
+    }
+    .competition-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .competition-card {
+        width: calc(100% - 180px);
+        height: 400px; /* Fixed height for smaller screens */
+       
+    }
+    .competition-card h3 {
+        font-size: 12px;
+    }
+    .competition-card p {
+        font-size: 10px ;
+    }
+
+    .competition-card .coma, 
+    .competition-card .param, 
+    .competition-card .unik {
+        font-size: 16px; /* Smaller text on very small screens */
+        margin: 8px 0; /* Adjust margin for better fit */
+    }
+    .btn-secondary {
+        width: 80px;
+        margin-left: 0;
+        
+    }
+
+    .competition-card .coma, 
+    .competition-card .param, 
+    .competition-card .unik {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text */
+        margin: 10px 0; /* Add margin between text elements */
+    }
+
+    .competition-card .param {
+        font-size: 22px; /* Slightly larger for emphasis */
+    }
+}
+
+@media (max-width: 480px) {
+    .event-section {
+        padding: 10px;
+    }
+    .competition-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .competition-card {
+        width: calc(100% - 180px);
+        height: 400px; /* Fixed height for smaller screens */
+       
+    }
+    .competition-card h3 {
+        font-size: 12px;
+    }
+    .competition-card p {
+        font-size: 10px ;
+    }
+
+    .competition-card .coma, 
+    .competition-card .param, 
+    .competition-card .unik {
+        font-size: 16px; /* Smaller text on very small screens */
+        margin: 8px 0; /* Adjust margin for better fit */
+    }
+    .btn-secondary {
+        width: 80px;
+        margin-left: 0;
+        
+    }
+}
